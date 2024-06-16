@@ -1,0 +1,18 @@
+.btn{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $brown-font;
+    border-radius: 30px;
+    text-shadow: 0 1px $white;
+    cursor: pointer;
+    @include boxShadow();
+    @include boxShadowHover();
+    span{
+        transition: $transition;
+    }
+    &:hover span{
+        transform: scale(.97);
+    }
+}

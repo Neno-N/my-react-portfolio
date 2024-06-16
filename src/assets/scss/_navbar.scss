@@ -1,0 +1,44 @@
+body #navbar{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    padding-inline: 40px;
+    z-index: 5;
+    & > div{
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin-inline: auto;
+        @include boxShadow();
+        padding: 20px;
+        strong{
+            font-size: 25px;
+        }
+        .nav-menu ul{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li a{
+                @include linkHover();
+            }
+        }
+    }
+
+    @include mobile{
+        padding-inline: 20px;
+        & > div{
+            width: 100%;
+            justify-content: center;
+            .nav-menu ul{
+                gap: 18px;
+                justify-content: space-between;
+            }
+            .logo-container{
+                display: none;
+            }
+        }
+    }
+}

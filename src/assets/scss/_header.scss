@@ -1,0 +1,36 @@
+body #header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    .header-title{
+        width: 50%;
+        p span{
+            font-size: 45px;
+        }
+    }
+    .btn-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .scroll-down .btn{
+        height: 50px;
+        width: 50px;
+        span{
+            position: relative;
+            animation: scrollDown .7s ease-in-out alternate-reverse infinite;
+        }
+    }
+    @keyframes scrollDown {
+        from{
+            top: -10px;
+        }
+        to{
+            top: 10px;
+        }
+    }
+}

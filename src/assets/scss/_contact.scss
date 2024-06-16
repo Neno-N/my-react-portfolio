@@ -1,0 +1,29 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .title-container{
+        margin-bottom: 40px;
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+    .title-container, form.form-wrapper, .thank-you{
+        width: 75%;
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .btn{
+            width: 50px;
+            height: 50px;
+            span{
+                line-height: 1;
+            }
+        }
+    }
+}
