@@ -46,6 +46,17 @@
             }
         }
     }
+
+    @include mobile(){
+        .accordion{
+            width: 100%;
+            .item{
+                .title, .content{
+                    padding: 20px;
+                }
+            }
+        }
+    }
 }
 
 .skills-banner{
@@ -53,16 +64,28 @@
     display: flex;
     // gap: 80px;
     width: fit-content;
+    overflow-x: hidden;
+    max-width: 100vw;
     & >div{
         display: flex;
         justify-content: space-between;
-        width: 100vw;
+        min-width: 100vw;
         animation: bannerScroll 10s linear infinite;
         padding-left: 80px;
+        gap: 80px;
         .skill{
             width: 100px;
             height: 100px;
             border-radius: 50%;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        & > div{
+            animation: bannerScrollMobile 7s linear alternate infinite;
+            &:last-child{
+                display: none;
+            }
         }
     }
 }
@@ -73,5 +96,14 @@
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+@keyframes bannerScrollMobile {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
     }
 }

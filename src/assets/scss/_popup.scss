@@ -8,7 +8,7 @@
     overflow-y: scroll;
     width: 60vw;
     z-index: 10;
-    transform: translateX(60vw);
+    transform: translateX(65vw);
     transition: $transition;
     padding: 40px;
     box-shadow: $box-shadow;
@@ -23,5 +23,10 @@
     }
     &.show{
         transform: translateX(0);
+    }
+    @include mobile(){
+        width: 100vw;
+        transform: translateX(105vw);
+        padding: 20px;
     }
 }

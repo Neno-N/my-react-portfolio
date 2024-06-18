@@ -15,4 +15,10 @@
             width: 30%;
         }
     }
+
+    @include mobile(){
+        .projects-container .project{
+            width: 100%;
+        }
+    }
 }

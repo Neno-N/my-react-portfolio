@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import neaReference from '../assets/images/Neo Ngwenya.png';
-// import udacityCertificate from '../assets/pdfs/Udacity Certificate.pdf';
+import udacityCertificate from '../assets/pdfs/Udacity Certificate.pdf';
 import react from '../assets/images/React Logo.png';
 import angular from '../assets/images/Angular Logo.png';
 import css from '../assets/images/CSS Logo.png';
@@ -55,7 +55,7 @@ export default function Experience () {
       qualification: 'Full-Stack Developer (Nanodegree)',
       period: 'May 2022 - Sept 2022',
       progress: 'Completed',
-      certificate: '../assets/pdfs/Udacity Certificate.pdf'
+      certificate: udacityCertificate
     },
     {
       school: 'freeCodeCamp',

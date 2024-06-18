@@ -33,4 +33,11 @@ body #header{
             top: 10px;
         }
     }
+
+    @include mobile(){
+        .header-title{
+            width: 100%;
+            p span{font-size: 35px;}
+        }
+    }
 }

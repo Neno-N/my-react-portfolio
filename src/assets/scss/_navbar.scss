@@ -5,6 +5,7 @@ body #navbar{
     right: 0;
     padding-inline: 40px;
     z-index: 5;
+    max-width: 100%;
     & > div{
         border-radius: 50px;
         display: flex;

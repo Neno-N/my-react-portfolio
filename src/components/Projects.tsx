@@ -38,7 +38,7 @@ export default function Projects () {
       title: 'Random Recipe Generator',
       languages: ['HTML', 'CSS', 'Javascript'],
       link: 'https://random-rg.netlify.app/',
-      excerpt: "Create a random recipe generator that provides users with a new and exciting recipe at the click of a button. This application will pull from a database of recipes, offering variety and inspiration for home cooks looking for new meal ideas. The project will involve HTML for the structure, CSS for styling the application, JavaScript for handling the logic of randomly selecting and displaying recipes, and potentially APIs if using an external recipe database. Responsive design skills will ensure the application works well on different devices.",
+      solution: "Create a random recipe generator that provides users with a new and exciting recipe at the click of a button. This application will pull from a database of recipes, offering variety and inspiration for home cooks looking for new meal ideas. The project will involve HTML for the structure, CSS for styling the application, JavaScript for handling the logic of randomly selecting and displaying recipes, and potentially APIs if using an external recipe database. Responsive design skills will ensure the application works well on different devices.",
       img: randomRecipeGenerator,
       problem: 'Home cooks often struggle to decide what to cook, especially when they want to try new recipes. Sifting through cookbooks or online recipes can be time-consuming and overwhelming.'
     },
